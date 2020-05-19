@@ -7,6 +7,7 @@ import store from './store/store'
 // import nprogress from 'nprogress/nprogress.css'
 import Vuelidate from 'vuelidate'
 import DateFilter from './filters/date'
+import vuetify from './plugins/vuetify'
 
 Vue.filter('date', DateFilter)
 
@@ -33,5 +34,6 @@ requireComponent.keys().forEach(fileName => {
 new Vue({
   router,
   store,
+  vuetify,
   render: h => h(App)
 }).$mount('#app')
