@@ -1,0 +1,15 @@
+{
+  "modules": [
+    {
+      "id": 1,
+      "author": {
+        "name": "someone"
+      },
+      "category": "Budgeting",
+      "title": "Budgetting 101",
+      "description": "An introduction video for budeting your expenses and your life",
+      "video-link": "",
+      "video-length": ""
+    }
+  ]
+}

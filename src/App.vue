@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <NavBar id="nav" />
+    <NotificationContainer />
+    <router-view :key="$route.fullPath" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from '@/components/NavBar.vue'
+import NotificationContainer from '@/components/NotificationContainer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBar,
+    NotificationContainer
   }
 }
 </script>
@@ -23,6 +26,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
