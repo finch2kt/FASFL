@@ -8,6 +8,8 @@ import About from './views/About.vue'
 import Account from './views/Myaccount.vue'
 import Home from './views/Home.vue'
 import ModuleShow from './views/ModuleShow.vue'
+import Login from './components/LoginCard.vue'
+import Dashboard from './components/Dashboard.vue'
 
 Vue.use(Router)
 
@@ -21,9 +23,20 @@ const router = new Router({
       props: true
     },
     {
+      path: '/dashboard',
+      name: 'dashboard',
+      component: Dashboard
+    },
+    {
       path: '/about',
       name: 'about',
       component: About
+    },
+    {
+      path: '/login-us',
+      name: 'login',
+      component: Login,
+      props: true
     },
     {
       path: '/Myaccount',

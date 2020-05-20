@@ -3,7 +3,8 @@
     <router-link to="/" class="brand">Root Page</router-link>
     <nav>
       <router-link :to="{ name: 'about' }">About</router-link> |
-      <router-link :to="{ name: 'account' }">Account</router-link>
+      <router-link :to="{ name: 'account' }">Account</router-link> |
+      <router-link :to="{ name: 'login' }">login</router-link>
     </nav>
   </div>
 </template>
