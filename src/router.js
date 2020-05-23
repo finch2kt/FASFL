@@ -11,11 +11,24 @@ import ModuleShow from './views/ModuleShow.vue'
 import Login from './components/LoginCard.vue'
 import Dashboard from './components/Dashboard.vue'
 
+// Components from Vue Mastery Turorials Videos
+import OGtable from './VuetifyComponents/OGtable.vue'
+
 Vue.use(Router)
 
 const router = new Router({
   mode: 'history',
   routes: [
+    {
+      path: '/OGtable',
+      name: 'OGtable',
+      component: OGtable
+    },
+    {
+      path: '/VuetifyForm',
+      name: 'VuetifyForm',
+      component: () => import('./VuetifyComponents/VuetifyL6.vue')
+    },
     {
       path: '/',
       name: 'home',
